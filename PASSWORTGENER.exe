@@ -1,0 +1,7 @@
+import "dart:math";
+
+void main() {
+  var zeichen = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()_+-=[]{}|;:',.<>?/";
+  var passwort = List.generate(12, (index) => zeichen[Random().nextInt(zeichen.length)]).join();
+  print(passwort);
+}
